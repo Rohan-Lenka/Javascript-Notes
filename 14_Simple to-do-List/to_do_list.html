@@ -1,0 +1,33 @@
+<!-- Make a to-do-list s.t it adds a new item(task) when typed in the input
+and removes it when clicked i.e when the item is done -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple To-do-List</title>
+    <style>
+      .list-item {
+        cursor: pointer;
+        width: min-content;
+      }
+      .list-item:hover {
+        color: red;
+        text-decoration: line-through;
+      }
+    </style>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div id="list">
+
+    </div>
+    <form id="new-item-form">
+      <label for="item-input"> New Item</label>
+      <input type="text" id="item-input">
+      <button type="submit"> Add Item</button>
+    </form>
+  </body>
+</html>
+
+<!-- What we wanna do is when we click on the submit button, 
+the item typed on the input should get added to the list div  -->
